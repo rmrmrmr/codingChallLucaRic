@@ -5,13 +5,38 @@
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
+    <h1 id="title">Survey</h1>
+    <p id="description">Please fill out the following info</p>
+    <form id="survey-form">
+      <label for="name" id='name-label'>Name</label>
+      <input type="text" required id="name" placeholder="Enter your name">
 
-  
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script  src="js/index.js"></script>
+      <label for="email" id='email-label'>E-mail</label>
+      <input type="email" required id="email" placeholder="Enter your e-mail">
+
+      <label for="number" id='number-label'>Age</label>
+      <input type="number" required id="number" min="0" max="99" placeholder="Age">
+
+      <select name="Country" id="dropdown">
+        <option value="Argentina">Argentina</option>
+        <option value="Mexico">Mexico</option>
+        <option value="United States">United States</option>
+        <option value="Canada">Canada</option>
+      </select>
+
+      <input type="radio" name="icecream" id="vanilla" value='vanilla'>
+      <label for="vanilla">Vanilla</label>
+      <input type="radio" name="icecream" id="chocolate" value='chocolate'>
+      <label for="chocolate">Chocolate</label>
+
+      <input type="checkbox" id="first-checkbox" value="first">
+      <input type="checkbox" value="second" id="second-checkbox">
+      <input type="checkbox" id="third-checkbox" value="third">
+      <input type="checkbox" value="fourth" id="fourth-checkbox">
+
+      <textarea id="comentario" cols="35" rows="5" placeholder="Write your comments here"></textarea>
+      <input type="submit" value="Submit" id='submit'>
+    </form>
   </body>
 </html>
-
-hola
